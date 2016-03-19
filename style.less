@@ -1,0 +1,151 @@
+@my-color: #333;
+@my-border: #330033;
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.header {
+	background-color: @my-color;
+}
+
+.logo {
+	width: 7%;
+	margin-right: 1%;
+	margin-top: 3px;
+	float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+}
+}
+
+.header-image {
+	padding-top: 330px;
+	color: white;
+	background: url("http://twitrheaders.com/wp-content/uploads/2014/05/Nebula-covered-night-sky.jpg");
+}
+
+.header-text {
+	margin-left: 10px;
+}
+
+.title {
+	margin-bottom: 0px;
+}
+
+.after-title {
+	display: none;
+	margin-top: 0px;
+	padding-bottom: 30px;
+}
+
+.posts {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding-bottom: 390px;
+	.post {
+	float: left;
+	width: 30%;
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 15px;
+	}
+}
+
+.posts .post:nth-child(1) {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.posts .post:nth-child(2) {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.posts .post:nth-child(3) {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.text {
+	p {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 10pt;
+	}
+}
+
+.image {
+	img {
+	min-width: 328px;
+	min-height: 125px;
+	max-width: 325px;
+	max-height: 128px;
+	border-radius: 4%;
+	}
+}
+
+button {
+	color: #330033;
+	border: none;
+    background-color: white;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    margin: 0px 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.btn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid @my-border;
+}
+
+.btn:hover {
+    background-color: @my-border;
+    color: white;
+}
+
+.footer {
+	background-color: @my-color;
+}
+
+.footer-text {
+	margin: 0;
+    padding: 15px 15px;
+	text-align: center;
+}
